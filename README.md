@@ -31,8 +31,8 @@ Reutilicé la paleta de colores de un proyecto anterior mío (un formulario de l
 ## 🛠️ Cómo correrlo
 
 ```bash
-git clone <url-de-este-repo>
-cd react-academy-landing
+git clone https://github.com/isaAJ05/Taller-03-React-Landing.git
+cd Taller-03-React-Landing
 npm install
 npm run dev
 ```
