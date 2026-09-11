@@ -1,16 +1,44 @@
-# React + Vite
+# 🚀 ReactAcademy Landing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page de "ReactAcademy" recreada con **React + Vite**, como parte del **Taller 03** del curso de Desarrollo de Aplicaciones Web Frontend.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Sobre el taller
 
-## React Compiler
+El ejercicio consistía en recrear una landing a partir de una imagen de referencia, decidiendo por cuenta propia cómo dividirla en componentes de React. No tenía que quedar idéntica al píxel, pero sí conservar los mismos elementos, el mismo orden y una jerarquía visual equivalente.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Qué construí
 
-## Expanding the ESLint configuration
+Dividí la landing en 6 componentes independientes, cada uno con su propio archivo `.jsx` y `.css`:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Componente | Qué hace |
+|---|---|
+| `Header` | Marca "ReactAcademy" y menú de navegación |
+| `Hero` | Título principal, descripción y botón que lleva a la sección de cursos |
+| `Section` | Título de la sección y la grilla de cursos, generada con `.map()` |
+| `Card` | Tarjeta individual de curso — recibe `icon`, `title`, `description` y `level` por **props**, se reutiliza 4 veces |
+| `Counter` | Contador de estudiantes interesados, con `useState` |
+| `Footer` | Pie de página |
+
+Los datos de los cursos viven en `src/data/courses.js` como un array; `Section` los recorre con `.map()` y le pasa cada objeto a `Card` como props, usando el `id` de cada curso como `key`.
+
+## 🎨 Estilo
+
+Reutilicé la paleta de colores de un proyecto anterior mío (un formulario de login), adaptándola a tonos morados para esta landing, usando variables CSS (`:root`) para mantener todo consistente entre componentes.
+
+## 🛠️ Cómo correrlo
+
+```bash
+git clone <url-de-este-repo>
+cd react-academy-landing
+npm install
+npm run dev
+```
+
+Abre `http://localhost:5173` en tu navegador.
+
+## Resultado
+<img width="1763" height="1273" alt="captura ok" src="https://github.com/user-attachments/assets/b5c9ebe4-268a-4325-b67a-c504f39f88b1" />
+
