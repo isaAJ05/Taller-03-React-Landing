@@ -22,6 +22,14 @@
   justify-content: center;
   gap: 1.2rem;
 }
+.counter-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: linear-gradient(180deg, var(--primary-color) 0%, var(--primary-color-dark) 100%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+}
 
 .counter-button {
   width: 2.4rem;

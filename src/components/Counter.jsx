@@ -9,22 +9,22 @@ function Counter() {
 
   return (
     <section className="enrollment">
-      <h2 className="enrollment-title">¿Cuántos estudiantes van a inscribirse?</h2>
-      <p className="enrollment-subtitle">Usa los botones para ajustar el número</p>
+    <h2 className="enrollment-title">¿Cuántos estudiantes van a inscribirse?</h2>
+    <p className="enrollment-subtitle">Usa los botones para ajustar el número</p>
 
-      <div className="enrollment-controls">
-        <button className="counter-button" type="button" onClick={decrement}>
-          −
+    <div className="counter-box">
+        <button className="counter-button decrement-button" type="button" onClick={decrement}>
+            −
         </button>
         <span className="counter-value">{count}</span>
-        <button className="counter-button" type="button" onClick={increment}>
-          +
+        <button className="counter-button increment-button" type="button" onClick={increment}>
+            +
         </button>
-      </div>
+    </div>
 
-      <p className="enrollment-label">estudiantes inscritos</p>
+    <p className="enrollment-label">estudiantes inscritos</p>
     </section>
-  )
+)
 }
 
 export default Counter

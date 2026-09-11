@@ -9,9 +9,9 @@ function Hero() {
       <p className="hero-description">
         Domina la librería más popular del frontend con proyectos prácticos y reales.
       </p>
-      <button className="hero-button" type="button">
+      <a className="hero-button" href="#cursos">
         Ver Cursos
-      </button>
+      </a>
     </section>
   )
 }

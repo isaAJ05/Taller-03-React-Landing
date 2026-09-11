@@ -1,21 +1,21 @@
 const courses = [
   {
     id: 'react-basico',
-    icon: '🧩',
+    icon: '⚛️',
     title: 'React Básico',
     description: 'Componentes, props, estado y eventos. Todo lo que necesitas para empezar.',
     level: 'Principiante',
   },
   {
     id: 'react-hooks',
-    icon: '🪝',
+    icon: '🔄',
     title: 'React Hooks',
     description: 'Profundiza en useState, useEffect y crea tus propios custom hooks.',
     level: 'Intermedio',
   },
   {
     id: 'estado-global',
-    icon: '🌐',
+    icon: '🗂️',
     title: 'Estado Global',
     description: 'Gestiona el estado con Context API y aprende cuándo usarlo.',
     level: 'Intermedio',

@@ -4,7 +4,7 @@ function Header() {
   return (
     <header className="site-header">
       <div className="brand">
-        React<span className="brand-accent">Academy</span>
+        <span className="brand-accent">ReactAcademy</span>
       </div>
       <nav>
         <ul className="nav-list">
