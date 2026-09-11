@@ -1,0 +1,35 @@
+.site-header {
+  background-color: var(--primary-color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: white;
+  font-weight: 700;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.brand-accent {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
