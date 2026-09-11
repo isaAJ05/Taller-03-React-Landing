@@ -28,6 +28,9 @@
   text-decoration: none;
   transition: transform 0.2s ease;
 }
+.nav-list li:last-child .nav-link {
+  padding-right: 2rem;
+}
 
 .nav-link:hover {
   text-decoration: underline;
